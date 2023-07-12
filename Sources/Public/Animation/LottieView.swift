@@ -104,9 +104,9 @@ public struct LottieView: UIViewConfiguringSwiftUIView {
 
   private let accessibilityLabel: String?
   private let animation: LottieAnimation?
-  private let imageProvider: Lottie.AnimationImageProvider?
-  private let textProvider: Lottie.AnimationTextProvider?
-  private let fontProvider: Lottie.AnimationFontProvider?
+  private let imageProvider: AnimationImageProvider?
+  private let textProvider: AnimationTextProvider?
+  private let fontProvider: AnimationFontProvider?
   private let configuration: LottieConfiguration
   private var sizing = SwiftUIMeasurementContainerStrategy.automatic
 }

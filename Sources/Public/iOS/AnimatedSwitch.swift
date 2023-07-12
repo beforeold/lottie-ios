@@ -223,11 +223,14 @@ class HapticGenerator: ImpactGenerator {
   // MARK: Internal
 
   func generateImpact() {
+    #if !os(xrOS)
     impact.impactOccurred()
+    #endif
   }
 
   // MARK: Fileprivate
-
+  #if !os(xrOS)
   fileprivate let impact = UIImpactFeedbackGenerator(style: .light)
+  #endif
 }
 #endif
